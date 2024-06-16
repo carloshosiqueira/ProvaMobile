@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
@@ -24,17 +24,17 @@ export default function App() {
           options={{
             tabBarLabel: 'Destaques',
             tabBarIcon: ({ color }) => (
-              <Ionicons name="image-outline" color={color} size={26} />
+              <Ionicons name="star-outline" color={color} size={26} />
             ),
           }}
         />
         <Tab.Screen
-          name="Buscar filme"
+          name="Busca"
           component={Busca}
           options={{
-            tabBarLabel: 'Buscar filme',
+            tabBarLabel: 'Buscar Filme',
             tabBarIcon: ({ color }) => (
-              <Ionicons name="information-outline" color={color} size={26} />
+              <Ionicons name="search-outline" color={color} size={26} />
             ),
           }}
         />
@@ -44,7 +44,7 @@ export default function App() {
           options={{
             tabBarLabel: 'Indicações',
             tabBarIcon: ({ color }) => (
-              <Ionicons name="information-outline" color={color} size={26} />
+              <Ionicons name="thumbs-up-outline" color={color} size={26} />
             ),
           }}
         />
@@ -54,7 +54,7 @@ export default function App() {
           options={{
             tabBarLabel: 'Contato',
             tabBarIcon: ({ color }) => (
-              <Ionicons name="calendar-number-outline" color={color} size={26} />
+              <Ionicons name="mail-outline" color={color} size={26} />
             ),
           }}
         />
